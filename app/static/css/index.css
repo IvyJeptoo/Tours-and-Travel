@@ -2,7 +2,30 @@
   .navbar-collapse{
     float: right;
   }
+  .advent{
+    font-size: 30vh;
+  }
+  .create_outd{
+    font-size: 3.5vh;
+  }
+
+  .wonder-card-1, .wonder-card-2,.wonder-card-3, .wonder-card-4{
+    width: 20%;
+  }
+
+  .card-row{
+    display: flex;
+    justify-content: space-around;
+  }
+
 }
+
+
+/* 
+@media screen and (min-width:768px){
+
+} */
+
 
 *{
   color: #fff;
@@ -25,6 +48,10 @@
   color: #fff;
 }
 
+.navbar{
+  background-color: rgba(19, 28, 33, .4);
+}
+
 .tours{
   color: #bfbd31;
 }
@@ -38,14 +65,62 @@
   color: #fff;
 }
 
-.advent{
-  font-size: 30vh;
-}
-
 .icon-bar{
   background-color: #bfbd31;
 }
 
-.create_outd{
-  font-size: 4vh;
+.fa-arrow-down{
+  position: relative;
+  animation: scroll-down 1s ease-in-out infinite alternate;
+}
+
+@keyframes scroll-down{
+  0%{top: -5vh;}
+  50%{top: 0;}
+  100%{top: 5vh; color: #bfbd31;}
+}
+
+.wonders{
+  background-color: #131C21;
+}
+
+.wonder-card-1{
+  background-image: url(../images/pexels-photo-8341088.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.wonder-card-2{
+  background-image: url(../images/pexels-photo-6808704.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.wonder-card-3{
+  background-image: url(../images/pexels-photo-2086917.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.wonder-card-4{
+  background-image: url(../images/pexels-photo-2415438.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+
+.wonder-card-1, .wonder-card-2,.wonder-card-3, .wonder-card-4{
+  margin: 5vh;
+}
+
+.reasons{
+  color: #131C21;
 }
