@@ -1,0 +1,51 @@
+@media screen and (min-width:768px){
+  .navbar-collapse{
+    float: right;
+  }
+}
+
+*{
+  color: #fff;
+}
+.banner{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/pexels-photo-1158943.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.banner-col{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.navbar a{
+  color: #fff;
+}
+
+.tours{
+  color: #bfbd31;
+}
+
+.nav li a:hover{
+  color: #bfbd31;
+  background-color: transparent;
+}
+.btn-default{
+  background-color: transparent;
+  color: #fff;
+}
+
+.advent{
+  font-size: 30vh;
+}
+
+.icon-bar{
+  background-color: #bfbd31;
+}
+
+.create_outd{
+  font-size: 4vh;
+}
