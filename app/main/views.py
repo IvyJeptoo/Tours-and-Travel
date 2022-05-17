@@ -7,3 +7,7 @@ def index():
   title = 'Welcome to Tours and Travel | Explore your world'
 
   return render_template('index.html')
+@main.route('/profile')
+def profile():
+  
+  return render_template('profile.html')
