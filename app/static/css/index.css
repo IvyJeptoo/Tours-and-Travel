@@ -131,6 +131,12 @@
   margin: 5vh 0;
 }
 
+.hr-line-blog{
+  width: 20vh;
+  border: 2px solid #bfbd31;
+  margin: 5vh 0;
+}
+
 .booknow{
   color: #bfbd31;
   background-color: transparent;
@@ -138,9 +144,20 @@
   transition: all .5s ease-in-out;
 }
 
+.readmore{
+  color: #131C21;
+  background-color: transparent;
+  border-color: #131C21;
+  transition: all .5s ease-in-out;
+}
+
 .booknow:hover{
   background-color: #bfbd31;
   color: rgb(19, 28, 33);
+}
+.readmore:hover{
+  background-color: #131C21;
+  color: #bfbd31;
 }
 
 .footer{
@@ -175,4 +192,24 @@
 .fab:hover{
   color: #bfbd31;
   cursor: pointer;
+}
+video{
+  width: 100%;
+  height: auto;
+}
+
+.Iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
+  height: auto;
+  margin-bottom: 5vh;
+}
+
+.Iframe-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
