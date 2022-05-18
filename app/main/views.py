@@ -11,3 +11,8 @@ def index():
 def profile():
   
   return render_template('profile.html')
+
+@main.route('/comments')
+def comments():
+  
+  return render_template('comments.html')
