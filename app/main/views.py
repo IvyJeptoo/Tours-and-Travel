@@ -15,13 +15,13 @@ def index():
 def bookings():
     bookform = BookForm()
     if bookform.validate_on_submit():
-      name = bookform.data
-      email = bookform.data
-      phone = bookform.data
-      date = bookform.data
-      destination = bookform.data
+      name = bookform.name.data
+      email = bookform.email.data
+      phone = bookform.phone.data
+      date = bookform.date.data
+      destination = bookform.destination.data
 
-      new_booking = Bookings(name=na)
+      Bookings = Bookings(name=name, email=email, phone=phone, date=date, destination=destination)
 
       bookform.save_slot()
     return render_template('bookform.html',bookform=bookform)
