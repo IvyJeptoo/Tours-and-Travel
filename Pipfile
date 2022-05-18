@@ -8,8 +8,9 @@ flask = "*"
 python-dotenv = "*"
 flask-bootstrap = "*"
 flask-sqlalchemy = "*"
-login = "*"
-flask-login = "==0.6.1"
+flask-wtf = "==1.0.0"
+psycopg2 = "*"
+sqlalchemy = "*"
 
 [dev-packages]
 

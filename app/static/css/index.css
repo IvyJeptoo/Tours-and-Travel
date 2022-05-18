@@ -235,3 +235,48 @@ video{
 #scroll-down{
   cursor: pointer;
 }
+.booking{
+    color:#131621;
+
+    min-height: 100vh;
+   
+
+}
+
+.booking input{
+    background-color: transparent;
+    border-color:#131621;
+
+}
+
+.booking input::placeholder,select{
+    background-color: transparent;
+}
+
+input[type="submit"]{
+    width: 100%;
+    color:#131621;
+    transition: all 1s ease-in;
+
+}
+
+input[type="submit"]:hover{
+    color: #131621;
+    background-color:#BFBD31;
+
+}
+
+.bonfire-bg{
+    background-image: url(../images/pexels-filip-marcus-adam-7339447.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+/* ----------------------------Winston------------------------ */
+
+
+
+
+
+
