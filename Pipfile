@@ -8,6 +8,8 @@ flask = "*"
 python-dotenv = "*"
 flask-bootstrap = "*"
 flask-sqlalchemy = "*"
+login = "*"
+flask-login = "==0.6.1"
 
 [dev-packages]
 

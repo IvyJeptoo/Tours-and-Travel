@@ -1,14 +1,10 @@
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 from config import config_options
 from flask_bootstrap import Bootstrap
 
 bootstrap = Bootstrap()
-
-
-
-
-
-
+db = SQLAlchemy()
 
 def create_app(config_name):
 
@@ -17,9 +13,14 @@ def create_app(config_name):
 
 
   app.config.from_object(config_options[config_name])
+  
+  # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
+  app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
+
 
    #initialise extesions
   bootstrap.init_app(app)
+  from .models import Comment
 
   #register blueprints
   from app.main import main as main_blueprint
