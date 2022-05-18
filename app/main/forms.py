@@ -1,14 +1,14 @@
 from flask_wtf import FlaskForm
 from wtforms import TextAreaField, StringField, SubmitField, SelectField, DateField
-from wtforms.validators import InputRequired
+from wtforms.validators import DataRequired, Email
 
 
 class BookForm(FlaskForm):
-    Name = StringField('Enter your name')
-    Email = StringField('Enter email address')
-    Phone = StringField('Enter phone number')
-    Location = StringField('Enter')
-    Date = DateField('Selected date')
-    Destination = SelectField('Select your destination')
-    Book = SubmitField('Book')
+    name = StringField('Enter your name')
+    email = StringField('Enter email address')
+    phone = StringField('Enter phone number')
+    location = StringField('Enter')
+    date = DateField('Selected date')
+    destination = SelectField('Select your destination')
+    book = SubmitField('Book')
     

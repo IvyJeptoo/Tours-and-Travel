@@ -1,7 +1,7 @@
 from . import main
 from flask import redirect, render_template, url_for, request
 from .forms import BookForm
-
+from app.models import Bookings
 
 
 @main.route('/')
@@ -11,16 +11,18 @@ def index():
   return render_template('index.html')
 
 
-@main.route('/', methods=['GET','POST'])
-def book_slot():
-    book_form = BookForm()
-    if book_form.validate_on_submit():
-      name = book_form.data
-      email = book_form.data
-      phone = book_form.data
-      date = book_form.data
-      destination = book_form.data
+@main.route('/bookings', methods=['GET','POST'])
+def bookings():
+    bookform = BookForm()
+    if bookform.validate_on_submit():
+      name = bookform.data
+      email = bookform.data
+      phone = bookform.data
+      date = bookform.data
+      destination = bookform.data
 
-      book_form.save_slot()
-      return render_template('bookform.html',book_form=book_form)
+      new_booking = Bookings(name=na)
+
+      bookform.save_slot()
+    return render_template('bookform.html',bookform=bookform)
 

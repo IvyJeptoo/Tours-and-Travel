@@ -5,7 +5,10 @@ load_dotenv()
 
 
 class Config:
-  pass
+  
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/tours'
+    SECRET_KEY = 'twendeTOURS'
+
 
 
 
