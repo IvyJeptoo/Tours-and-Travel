@@ -109,7 +109,7 @@
 }
 
 .wonder-card-4{
-  background-image: url(../images/pexels-photo-2415438.jpeg);
+  background-image: url(../images/wp4188782.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -212,4 +212,21 @@ video{
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+
+
+.wonder-bg{
+  background-color: rgba(19, 28, 33, 0.5);
+  padding: 2vh 4vh;
+  transition: all 1s ease-in;
+}
+.wonder-bg:hover{
+  background-color: rgba(191, 189, 49, 0.5);
+  cursor: pointer;
+}
+
+.wonder{
+  display: flex;
+  align-items: flex-end;
 }
