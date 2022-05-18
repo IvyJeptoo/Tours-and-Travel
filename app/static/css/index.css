@@ -144,7 +144,7 @@
 }
 
 .footer{
-  background-image:linear-gradient(to bottom, rgba(19, 28, 33, 0.5), rgba(19, 28, 33, 0.5)), url(../images/pexels-photo-4404524.jpeg);
+  background-image:linear-gradient(to bottom, rgba(19, 28, 33, 0.6), rgba(19, 28, 33, 0.6)), url(../images/pexels-photo-4404524.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -153,4 +153,26 @@
 
 .hr-nav{
   margin-bottom: 0;
+}
+
+.nav-item{
+  list-style: none;
+}
+
+.nav-link{
+  color: #fff;
+  
+}
+
+.far, .fas{
+  font-size: 4v !important;
+}
+
+.fab{
+  padding: 0 2vh;
+  font-size: 4.8vh !important;
+}
+.fab:hover{
+  color: #bfbd31;
+  cursor: pointer;
 }
