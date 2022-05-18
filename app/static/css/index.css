@@ -140,5 +140,17 @@
 
 .booknow:hover{
   background-color: #bfbd31;
-  color: #131C21;
+  color: rgb(19, 28, 33);
+}
+
+.footer{
+  background-image:linear-gradient(to bottom, rgba(19, 28, 33, 0.5), rgba(19, 28, 33, 0.5)), url(../images/pexels-photo-4404524.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+}
+
+.hr-nav{
+  margin-bottom: 0;
 }
