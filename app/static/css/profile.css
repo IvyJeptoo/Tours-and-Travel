@@ -1,15 +1,14 @@
-body {
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('../images/background.jpeg');    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+section{      
+    background-color: #707531;
+     height: 100vh;
     
     
 }
 
 .padding {
-    padding: 3rem !important;
-    margin-top: 4rem !important;
+    
+    padding: 5rem !important;
+    /* margin-top: 4rem !important; */
     border-radius: 20%;
 }
 
@@ -18,6 +17,9 @@ body {
 }
 .details{
    background: black;
+   background: linear-gradient(145deg, #858B3A, #5B5F28);
+   /* border-radius: 15%; */
+   box-shadow: inset 9.91px 9.91px 15px #666A2D, inset -9.91px -9.91px 15px #7A8035;
 }
 
 .card {
@@ -41,12 +43,15 @@ body {
 }
 
 .bg-c-lite-green {
-    background: #707531;
+    background: black;
     
 }
 
 .user-profile {
     padding: 20px 0;
+    background: linear-gradient(145deg, #858B3A, #5B5F28);
+   /* border-radius: 15%; */
+    box-shadow: inset 9.91px 9.91px 15px #666A2D, inset -9.91px -9.91px 15px #7A8035;
 }
 
 .card-block {
@@ -62,14 +67,14 @@ body {
     border-radius: 5px;
 }
 .p{
-    color: grey;
+    color: rgb(207, 207, 207);
 }
 .b{
     color: black;
 }
  
 .h6 {    
-    color: #707531;
+    color: black;
 }
 
 .card .card-block p {
@@ -106,7 +111,7 @@ p {
 
 
 .b-b-default {
-    border-bottom: 1px solid #707531;
+    border-bottom: 1px solid black;
 }
 
 .f-w-600 {
