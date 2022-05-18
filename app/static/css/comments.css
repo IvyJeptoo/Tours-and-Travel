@@ -115,3 +115,7 @@ form{
  .gen{
      padding-top: 4rem;
  }
+ .back{
+     display: flex;
+     justify-content: space-between;
+ }
