@@ -124,3 +124,21 @@
 .reasons{
   color: #131C21;
 }
+
+.hr-line{
+  width: 40vh;
+  border: 2px solid #bfbd31;
+  margin: 5vh 0;
+}
+
+.booknow{
+  color: #bfbd31;
+  background-color: transparent;
+  border-color: #bfbd31;
+  transition: all .5s ease-in-out;
+}
+
+.booknow:hover{
+  background-color: #bfbd31;
+  color: #131C21;
+}
