@@ -60,6 +60,7 @@ def deletecomment(comment_id):
 
 
 @main.route('/bookings', methods=['GET','POST'])
+@login_required
 def bookings():
     bookform = BookForm()
     if bookform.validate_on_submit():

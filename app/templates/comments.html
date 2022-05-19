@@ -1,8 +1,15 @@
-{% extends "base.html" %}
-{% from 'comments_macro.html' import displayComments %}
+{% extends 'base.html' %}
+{% import "macros.html" as macro %}
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/comments.css')}}">
+{% endblock %}
+
+
+
 {% block content%}
 
-<div>{{ displayComments(allcomments)}}</div>
+<div>{{ macro.displayComments(allcomments)}}</div>
 
 {% endblock%}
 

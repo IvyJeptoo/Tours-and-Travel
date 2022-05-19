@@ -41,7 +41,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         
-                                        <p class="m-b-10 f-w-600 p">1500</p>
+                                        <p class="m-b-10 f-w-600 p">{{current_user.bookings.count()*200}} points</p>
                                     </div>
                                     
                                 </div>
@@ -82,6 +82,9 @@
                                         
                                     
                                 </div>
+                                <h2 style="text-align: center;">Your next event is in:</h2><hr>
+
+                                <div id="nexteventdate" style="text-align: center;"></div>
                                
                             </div>
                         </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Cookie&family=Dancing+Script:wght@400;700&family=Inspiration&family=Pacifico&family=Poppins:wght@100;300&family=Satisfy&family=Shadows+Into+Light&display=swap');
+
 @media screen and (min-width:768px){
   .navbar-collapse{
     float: right;
@@ -30,6 +32,7 @@
 *{
   color: #fff;
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 .banner{
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/pexels-photo-1158943.jpeg);
@@ -279,7 +282,7 @@ input[type="submit"]:hover{
 /* ----------------------------Winston------------------------ */
 
 .login-bg{
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/pexels-photo-1271619.jpeg);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/pexels-photo-1271619.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
