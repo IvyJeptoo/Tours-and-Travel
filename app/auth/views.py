@@ -6,7 +6,7 @@ from ..models import User
 from .forms import  LoginForm, RegistrationForm
 from .. import db
 
-@auth.route('/login',methods=['GET, POST'])
+@auth.route('/login', methods=['GET', 'POST'])
 def login():
     title= 'TwendeTours | Log In'
     form = LoginForm()
@@ -16,7 +16,7 @@ def login():
             login_user(user, form.remember.data)
             return redirect(url_for('main.index'))
         flash('Invalid username or password')
-    return render_template('login.html', title=title, login_form = form)
+    return render_template('auth/login.html', title=title, login_form = form)
 
 
 @auth.route('/register', methods=['GET', 'POST'])
@@ -28,8 +28,8 @@ def register():
         db.session.add(new_user)
         db.session.commit()
 
-        return redirect(url_for('aut.login'))
-    return render_template('register.html', title=title)
+        return redirect(url_for('auth.login'))
+    return render_template('auth/register.html', title=title, registration_form=form)
         
 @auth.route('/logout')
 @login_required

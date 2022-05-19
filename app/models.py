@@ -13,7 +13,7 @@ class User(db.Model, UserMixin):
     id = db.Column(db.Integer,primary_key = True)
     username = db.Column(db.String(255), unique=True, nullable=False)
     email = db.Column(db.String(128), nullable=False, unique=True)
-    pass_code = db.Column(db.String(60), nullable=False)
+    pass_code = db.Column(db.String, nullable=False)
     comments = db.relationship('Comment', backref='user', lazy='dynamic')
     bookings = db.relationship('Bookings', backref='user', lazy='dynamic')
 

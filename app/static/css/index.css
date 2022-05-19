@@ -61,7 +61,7 @@
   color: #bfbd31;
   background-color: transparent;
 }
-.btn-default{
+.nav .btn-default{
   background-color: transparent;
   color: #fff;
   margin: 0 2vh;
@@ -269,13 +269,45 @@ input[type="submit"]:hover{
 
 .bonfire-bg{
     background-image: url(../images/pexels-filip-marcus-adam-7339447.jpg);
-    background-position: 100%;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
 /* ----------------------------Winston------------------------ */
 
+.register-bg{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/pexels-photo-631317.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.form-reg{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.form-reg input{
+  width: 100%;
+  background-color: transparent;
+  border-color: #bfbd31;
+}
+
+.form-reg input[type='submit']{
+  color: #bfbd31;
+}
+
+.form-reg input[type='submit']:hover{
+  color: #131621;
+}
+.form-bg{
+  backdrop-filter: blur(5px);
+  background-color: rgba(19, 22, 33, 0.4);
+}
 
 
 
