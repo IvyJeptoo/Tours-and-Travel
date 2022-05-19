@@ -276,14 +276,6 @@ input[type="submit"]:hover{
 }
 /* ----------------------------Winston------------------------ */
 
-.register-bg{
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/pexels-photo-631317.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
 .login-bg{
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/pexels-photo-1271619.jpeg);
   background-position: center;
@@ -299,17 +291,24 @@ input[type="submit"]:hover{
   min-height: 100vh;
 }
 
-.form-reg input{
+.form-reg input, #destination{
   background-color: transparent;
   border-color: #bfbd31;
+  color: #fff;
+}
+
+#destination option{
+  background-color: rgba(19, 22, 33, 0.5);
 }
 
 .form-reg input[type='submit']{
   color: #bfbd31;
+  margin-top: 3vh;
 }
 
 .form-reg input[type='submit']:hover{
   color: #131621;
+  
 }
 .form-bg{
   backdrop-filter: blur(5px);
