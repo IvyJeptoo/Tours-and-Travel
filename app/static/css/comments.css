@@ -1,0 +1,121 @@
+
+@media(min-width:568px){
+    .end{
+        margin-left: auto;
+    }
+}
+@media(max-width:768px){
+    #post{
+        width: 100%;
+    }
+}
+#clicked{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    width: 100%;
+    background-color: #ECB21F;
+    border-color: #A88734 #9C7E31 #846A29;
+    color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 13px;
+}
+#profile{
+    background-color: unset;
+}
+#post{
+    margin: 10px;
+    padding: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    background-color: black;
+    
+    color: #707531;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 13px;
+    width: 50%;
+}
+#post:hover{
+    background-color: #707531;
+    color: black;
+}
+
+
+
+.comments{
+    margin-top: 5%;
+    margin-left: 20px;
+}
+
+.comment{
+    background: linear-gradient(145deg, #858B3A, #5B5F28);
+    border-radius: 15%;
+    box-shadow: inset 9.91px 9.91px 15px #666A2D, inset -9.91px -9.91px 15px #7A8035;
+    background-color: #707531;
+    float: left;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+.comment h4,.comment span,.darker h4,.darker span{
+    display: inline;
+}
+.comment p,.comment span,.darker p,.darker span{
+    color: black;
+}
+h1,h4{
+    color: black;
+    font-weight: bold;
+}
+label{
+    background-color: transparent;
+    font-weight: 500;
+}
+#align-form{
+    margin-top: 20px;
+}
+.form-group p a{
+    color: white;
+}
+#checkbx{
+    background-color: black;
+}
+#darker img{
+    margin-right: 15px;
+    position: static;
+}
+.form-group input,.form-group textarea{
+    background-color: transparent;
+    border: 1px solid rgba(16, 46, 46, 1);
+    border-radius: 12px;
+}
+form{
+    background: linear-gradient(145deg, #858B3A, #5B5F28);
+    border-radius: 15%;
+    box-shadow: inset 9.91px 9.91px 15px #666A2D, inset -9.91px -9.91px 15px #7A8035;
+    
+    background: #707531;
+    border-radius: 15%;
+    box-shadow: inset 9.91px 9.91px 15px #666A2D, inset -9.91px -9.91px 15px #7A8035;
+    border-radius: 5px;
+    padding: 20px;
+ }
+ section{
+     background-color: #707531;
+     height: 100vh;
+ }
+ .foot{
+     display: flex;
+     justify-content: space-between;
+ }
+ .gen{
+     padding-top: 4rem;
+ }
+ .back{
+     display: flex;
+     justify-content: space-between;
+ }

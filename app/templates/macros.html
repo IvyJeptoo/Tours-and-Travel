@@ -1,0 +1,49 @@
+
+{% macro displayComments(allcomments) %}
+<!-- Main Body -->
+<section>
+    <div class="container">
+        <div class="row gen">
+
+            <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
+                <form id="algin-form">
+                    <h4>Leave a comment</h4>
+                    <div class="form-group">
+                        <label for="nickname">Nickname</label>
+                        <input type="text" name="nickname" id="nickname" class="form-control"
+                            style="background-color: transparent;">
+                    </div>
+                    <div class="form-group">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" msg cols="30" rows="5" class="form-control"
+                            style="background-color: transparent;"></textarea>
+                    </div>
+                    <div class="form-group back">
+                        <a href="" class="btn comment-button"><i class="bi bi-arrow-left"
+                                style='font-size:30px; font-weight: 800;'></i></a>
+                        <button type="button" id="post" class="btn">Post Comment</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-5 col-md-6 col-12 pb-4">
+
+                <div class="comment mt-4 text-justify float-left">
+                    <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius"
+                        alt="User-Profile-Image">
+                    <h4>Jhon Doe</h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
+                        vero sequi velit molestias doloremque molestiae dicta?</p>
+                    <hr style="color: black;">
+                    <div class="foot">
+                        <p style="color: black; padding-top: 5%;">- 20 October, 2018</p>
+                        <a href=""><button class="btn comment-button red"><i class="bi bi-trash3-fill"
+                                    style='font-size:30px;'></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endmacro %}
