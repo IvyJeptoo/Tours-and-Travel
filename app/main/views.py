@@ -1,6 +1,6 @@
 from . import main
 from flask import redirect, render_template, url_for, request,flash
-from flask_login import login_required
+from flask_login import current_user, login_required
 from ..models import Comment
 from app import db
 from .forms import BookForm
@@ -10,14 +10,17 @@ from app.models import Bookings
 @main.route('/')
 def index():
   title = 'Welcome to Tours and Travel | Explore your world'
-
   return render_template('index.html',title=title)
 
 
 @main.route('/profile')
+@login_required
 def profile():
-  
-  return render_template('profile.html')
+  title = 'Welcome to Tours and Travel | Your profile'
+  user_id = current_user._get_current_object().id
+  bookings = Bookings.query.filter_by(user_id=user_id).all()
+  return render_template('profile/profile.html', title=title, bookings=bookings)
+
 
 
 @main.route('/comments')
@@ -62,12 +65,16 @@ def bookings():
     if bookform.validate_on_submit():
       name = bookform.name.data
       email = bookform.email.data
-      phone = bookform.phone.data
+      phone_number = bookform.phone.data
       date = bookform.date.data
+      location = bookform.location.data
       destination = bookform.destination.data
+      user_id = current_user._get_current_object().id
 
-      Bookings = Bookings(name=name, email=email, phone=phone, date=date, destination=destination)
+      bookings = Bookings(name=name, email=email, phone_number=phone_number, date=date, location=location, destination=destination, user_id=user_id)
+      bookings.save_bookings()
+      return redirect(url_for('main.profile'))
 
-      bookform.save_slot()
+
     return render_template('bookform.html',bookform=bookform)
 

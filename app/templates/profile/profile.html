@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/profile.css')}}">
+{% endblock %}
+{% block content %}
+<section>
+<div class="page-content page-container" id="page-content">
+    <div class="padding">
+        <div class="row  d-flex justify-content-center">
+            <div class="col-xl-6 col-md-12">
+                <div class="card user-card-full">
+                    <div class="row m-l-0 m-r-0">
+                        <div class="col-sm-4 bg-c-lite-green user-profile">
+                            <div class="card-block text-center text-white">
+                                <div class="m-b-25">
+                                    <img src="https://img.icons8.com/bubbles/100/000000/user.png" class="img-radius"
+                                        alt="User-Profile-Image">
+                                </div>
+                                
+                                <h4 class="f-w-600 b">Bio</h4>
+                                <p>Passport Ready!</p>
+                                <button type="button" class="btn readmore">Edit Profile</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 details">
+                            
+                            <div class="card-block">
+                                <h3 class="m-b-20 p-b-5 b-b-default f-w-300 h3">INFORMATION</h3>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h4 class=" f-w-600 h4">Email</h4>
+                                        <p class="m-b-10 f-w-400 p">{{current_user.email}}</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4 class="f-w-600 h4">User Name</h4>
+                                        <p class="m-b-10 f-w-400 p">{{current_user.username}}</p>
+                                    </div>
+                                </div>
+                                <h4 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600 h4">Safari points <i class="fa-solid fa-gem"></i></h4>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        
+                                        <p class="m-b-10 f-w-600 p">1500</p>
+                                    </div>
+                                    
+                                </div>
+
+
+                                <div>
+                                    <h2 style="text-align: center;">Booked Tours Summary</h2><hr>
+
+                                    {% if bookings %}
+                                    <table class="table">
+                                    <thead>
+                                        <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Booked by</th>
+                                        <th scope="col">Phone no.</th>
+                                        <th scope="col">Your Location</th>
+                                        <th scope="col">Destination</th>
+                                        <th scope="col">Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for booking in bookings %}
+                                        <tr>
+                                        <th scope="row">1</th>
+                                        <td>{{booking.name}}</td>
+                                        <td>{{booking.phone_number}}</td>
+                                        <td>{{booking.location}}</td>
+                                        <td>{{booking.destination}}</td>
+                                        <td>{{booking.date}}</td>
+                                        </tr>
+                                        {% endfor %}
+
+                                    </tbody>
+                                </table>
+                                        {% else %}
+                                        <h4 style="text-align:center ;">You have not booked any trips yet. <a style="color:#131C21 ;" href="{{url_for('main.bookings')}}">Book Now</a></h4>
+                                        {% endif %}
+                                        
+                                    
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+{% endblock%}

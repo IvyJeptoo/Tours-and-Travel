@@ -49,8 +49,10 @@
   color: #fff;
 }
 
-.navbar{
-  background-color: rgba(19, 28, 33, .4);
+.navbar, .dropdown-menu, .dropdown-menu li a, .dropdown-toggle{
+  background-color: rgba(19, 28, 33);
+  margin-bottom: 0;
+  color: #fff;
 }
 
 .tours{
