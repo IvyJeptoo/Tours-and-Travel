@@ -15,6 +15,7 @@ email-validator = "*"
 flask-login = "*"
 psycopg2-binary = "*"
 flask-migrate = "*"
+gunicorn = "*"
 
 [dev-packages]
 
