@@ -2,7 +2,7 @@
 ### PROJECT  NAME 
  +  TWENDE TOURS
 
-### AUTHOR 
+### AUTHORS
  + Jacqueline Ngabo 
  + Charles Okunzo
  + Winston Musasia
