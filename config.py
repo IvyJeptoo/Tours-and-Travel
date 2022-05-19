@@ -8,6 +8,7 @@ class Config:
   
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:Access@localhost/tours'
     SECRET_KEY = 'twendeTOURS'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 
 
